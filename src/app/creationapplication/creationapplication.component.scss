@@ -1,0 +1,102 @@
+.form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    width: 700px;
+    margin-bottom: 30px;
+  }
+  
+  .signe-plus {
+    background-color: rgb(132, 9, 103);
+    color: white;
+    border: 1px solid rgb(132, 9, 103);
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 80px; /* Espacement entre la phrase et le signe "+" */
+  }
+  
+  .form-label {
+    font-weight: bold;
+    display: inline-block; /* Permet de mettre le contenu sur la même ligne */
+  }
+  
+  
+  
+  .option-description {
+    margin-top: 10px; /* Espacement entre l'option radio et le mot */
+  }  
+  
+  
+  
+  .List-group {
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  
+  .List-group label {
+    width: 140px; /* Ajustez la largeur selon vos besoins */
+  }
+  
+  .List-group input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-right: 1px; /* Espace entre les champs */
+    box-sizing: border-box;
+    border: #fff;
+    font-size: 14px;
+   
+    
+  }
+  
+  
+  .List-group label, .List-service input[type="text"] {
+    margin-right: 5px; /* Espace entre chaque élément */
+  }
+  
+  .List-group button {
+    position: absolute;
+    top: 6;
+    right:6px;
+    background-color: #366bde;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1px; /* Espace entre le bouton et le haut */
+    margin-right: 2px; /* Espace entre le bouton et la droite */
+  }
+  
+  
+  
+  .form-row label {
+    margin-right: 10px; /* Espacement entre les étiquettes et les champs de saisie */
+  }
+  
+  .horizontal-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .label-inline {
+    margin-right: 10px;
+  }
+  
+  .segment-options {
+    margin-top: 20px; /* Ajouter de la marge en haut */
+    margin-left: 20px; /* Ajouter de la marge à gauche */
+  }
+  
+  
+  
+  

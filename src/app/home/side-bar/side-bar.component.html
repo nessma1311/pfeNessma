@@ -1,0 +1,86 @@
+
+    <!-- ======= Sidebar ======= -->
+
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" >
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+
+    <li class="nav-item">
+        
+        <span class="nav-heading mt-4"  >Risque</span>
+   
+        <a class="nav-link collapsed" (click)="ShowHideCollapse('riskreport-nav')" data-bs-target="#riskreport-nav" data-bs-toggle="collapse"  >
+            <i class="bi bi-circle"></i><span>Rapports</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="riskreport-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav" >
+            <li>
+                <a routerLink="/home/reports/riskreport" routerLinkActive="active"  >
+                    <i class="bi bi-circle"></i><span>Rapport risque</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+         
+
+    <!-- Section Gestion d'accès -->
+<li class="nav-item">
+    <span class="nav-heading mt-4">Gestion d'accès</span>
+    <a class="nav-link collapsed" (click)="ShowHideCollapse('gestionacces-nav')" data-bs-target="#gestionacces-nav" data-bs-toggle="collapse">
+        <i class="bi bi-circle"></i><span>Gestion d'accès</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
+    <ul id="gestionacces-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <li>
+            <a routerLink="/gestiongroupe" routerLinkActive="active">
+                <i class="bi bi-circle"></i><span>gestion groupe</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/gestionrelation" routerLinkActive="active">
+                <i class="bi bi-circle"></i><span>Gestion relation</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/home/reports/gestionutilisateur" routerLinkActive="active">
+                <i class="bi bi-circle"></i><span>Gestion utilisateur</span>
+            </a>
+        </li>
+
+        
+    </ul>
+</li>
+<li class="nav-item">
+    <span class="nav-heading mt-4">Gestion des applications</span>
+    <a class="nav-link collapsed" (click)="ShowHideCollapse('gestion-des-application-nav')" data-bs-target="#gestion-des-application-nav" data-bs-toggle="collapse">
+        <i class="bi bi-circle"></i><span>Gestion des applications</span><i class="bi bi-chevron-down ms-auto"></i>
+    </a>
+    <ul id="gestion-des-application-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <li>
+            <a routerLink="/creationapplication" routerLinkActive="active">
+                <i class="bi bi-circle"></i><span>Création des applications</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/creationservice" routerLinkActive="active">
+                <i class="bi bi-circle"></i><span>Création service</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/creationsousservice" routerLinkActive="active">
+                <i class="bi bi-circle"></i><span>Création sous service</span>
+            </a>
+        </li>
+    </ul>
+</li>
+
+ 
+ 
+        </ul>
+
+  <!-- End Sidebar-->

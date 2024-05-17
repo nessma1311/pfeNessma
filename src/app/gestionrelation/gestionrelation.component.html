@@ -1,0 +1,182 @@
+<div class=" p-5">
+    <div class="bg-white p-5 "  >
+        <p>Choix segment client</p>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Retail" [(ngModel)]="selectedOption">
+            <label class="form-check-label" for="exampleRadios1">Retail</label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Corporate" [(ngModel)]="selectedOption">
+            <label class="form-check-label" for="exampleRadios2">Corporate</label>
+        </div>
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Plateforme" [(ngModel)]="selectedOption">
+            <label class="form-check-label" for="exampleRadios3">Plateforme</label>
+        </div>
+        <div class="form-check mb-5">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="Fintech" [(ngModel)]="selectedOption">
+            <label class="form-check-label" for="exampleRadios4">Fintech - Startup</label>
+        </div>
+        <div id="Retail" class="container" *ngIf="selectedOption === 'Retail'||selectedOption === 'Plateforme'">
+            <div class="row">
+                <div class="col-3">
+                    <label for="options" class="p-2">Nom du groupe</label>
+                </div>
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <select class="form-control" id="options">
+                            <option value="option1"></option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <!-- Ajoute d'autres options si nécessaire -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-3">
+                    <label for="" class="p-2">Ajouter une Société<br>Recherche</label>
+                </div>
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="compte">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Recherche</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 text-center"> <!-- Utilise col-12 pour occuper toute la largeur -->
+                    <button class="btn btn-info mx-auto">Ajouter</button> <!-- Ajoute la classe mx-auto pour centrer le bouton -->
+                </div>
+            </div>
+        </div>
+        <div id="Retail" class="container" *ngIf="selectedOption === 'Fintech'">
+            <div class="row">
+                <div class="col-3">
+                    <label for="options" class="p-2">Nom du groupe</label>
+                </div>
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <select class="form-control" id="options">
+                            <option value="option1"></option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <!-- Ajoute d'autres options si nécessaire -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="row">
+                <div class="col-3">
+                    <label for="" class="p-2">Nom</label>
+                </div>
+                <div class="col-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="nom">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Recherche</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 text-center"> <!-- Utilise col-12 pour occuper toute la largeur -->
+                    <button class="btn btn-info mx-auto">Ajouter</button> <!-- Ajoute la classe mx-auto pour centrer le bouton -->
+                </div>
+            </div>
+        </div>
+        <div id="Retail" class="container" *ngIf="selectedOption === 'Corporate'">
+    <div class="row"> <!-- Ajouter cette balise d'ouverture -->
+        <label for="" class="col-3 p-2">Choix type d'entreprise</label>
+        <div class="col-3">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" checked>
+                <label class="form-check-label" for="exampleRadios1">Groupe d'entreprise</label>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" >
+                <label class="form-check-label" for="exampleRadios2">Simple entreprise</label>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-3">
+            <label for="options" class="p-2">Nom du groupe</label>
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <select class="form-control" id="options">
+                    <option value="option1"></option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                    <!-- Ajoute d'autres options si nécessaire -->
+                </select>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-3">
+            <label for="" class="p-2">Ajouter de(s) société(s) <br>Recherhce</label>
+        </div>
+        <div class="col-6">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="compte/tiers/rne">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Recherche</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12 text-center"> <!-- Utilise col-12 pour occuper toute la largeur -->
+            <button class="btn btn-info mx-auto">Ajouter</button> <!-- Ajoute la classe mx-auto pour centrer le bouton -->
+        </div>
+    </div>
+</div>
+
+        
+    </div>
+    
+
+    <div class="bg-white p-5 mt-5 ">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3>Liste Des Relations</h3>
+            <button class="btn btn-primary">Ajouter un Utilisateur</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nom de la relation</th>
+                    <th scope="col">Segment</th>
+                    <th scope="col">Référentiel</th>
+                    <th scope="col">Abréviation</th>
+                    <th scope="col">Date de création</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Boucle *ngFor pour afficher les données -->
+                <tr *ngFor="let relation of relations">
+                    <td>{{ relation.nom }}</td>
+                    <td>{{ relation.segment }}</td>
+                    <td>{{ relation.referentiel }}</td>
+                    <td>{{ relation.abreviation }}</td>
+                    <td>{{ relation.dateCreation }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

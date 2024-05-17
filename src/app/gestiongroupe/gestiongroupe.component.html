@@ -1,0 +1,48 @@
+
+
+<form class="custom-form">
+  <div>
+    <label for="idgroupe">Id du groupe :</label>
+    <input type="text" id="idgroupe" name="idgroupe" [(ngModel)]="groupId"><br>
+  </div>
+  <div>
+    <label for="groupName">Nom du groupe :</label>
+    <input type="text" id="groupName" name="groupName" [(ngModel)]="groupName"><br>
+  </div>
+  <div>
+    <label for="groupType">Type de groupe :</label>
+    <select id="groupType" name="groupType" [(ngModel)]="groupType">
+      <option value="1">Type 1</option>
+      <option value="2">Type 2</option>
+      <option value="3">Type 3</option>
+    </select>
+  </div>
+  <button (click)="addGroupe()">Ajouter</button>
+</form><br>
+
+    
+  
+    <form class=" List-groupe">
+      <div>
+          <h2>Liste Des Groupes</h2><br>
+          
+          <label for="groupName">Nom du groupe :</label>
+          <input type="text" id="groupName" name="groupName">
+         
+          <label for="type">Type du groupe :</label>
+          <input type="text" id="type" name="type">
+          
+          <label for="dateCreation">Date de création :</label>
+          <input type="text" id="dateCreation" name="dateCreation">
+          
+          <label for="listeSociete">Liste des sociétés :</label>
+          <input type="text" id="listeSociete" name="listeSociete">
+         
+            
+      </div>
+    
+      <button type="submit">Ajouter des relations</button>
+  </form>
+  
+    
+  

@@ -1,0 +1,87 @@
+.custom-form label {
+    display: inline-block; /* Assure que chaque label et input sont sur la même ligne */
+    width: 120px; /* Largeur fixe pour l'étiquette */
+    margin-right: 10px; /* Ajoute un espacement entre l'étiquette et l'input */
+}
+
+.custom-form input[type="text"],
+.custom-form select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px; /* Taille du texte */
+}
+.custom-form label {
+    display: inline-block;
+    width: 150px; /* Augmentez la largeur de l'étiquette */
+    margin-right: 20px; /* Ajoutez de la marge entre les étiquettes et les champs */
+}
+
+.custom-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #f1eded;
+    border-radius: 5px;
+    width: 1400px; /* Largeur fixe pour le formulaire */
+    
+}
+
+.custom-form button[type="submit"] {
+    display: block;
+    margin: 20px auto 0; /* Espacement en haut et centrage horizontal */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Taille du texte du bouton */
+    text-align: center;
+}
+
+.h2{
+    font-size: 30px;
+}
+  .List-groupe {
+    flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.List-groupe label {
+    width: 140px; /* Ajustez la largeur selon vos besoins */
+}
+
+.List-groupe input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-right: 1px; /* Espace entre les champs */
+    box-sizing: border-box;
+    border: #fff;
+    font-size: 14px;
+   
+    
+}
+
+
+.List-groupe label, .List-groupe input[type="text"] {
+    margin-right: 5px; /* Espace entre chaque élément */
+}
+
+.List-groupe button {
+    position: absolute;
+    top: 6;
+    right:6px;
+    background-color: #366bde;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1px; /* Espace entre le bouton et le haut */
+    margin-right: 2px; /* Espace entre le bouton et la droite */
+}
+
